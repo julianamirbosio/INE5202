@@ -17,13 +17,13 @@ import matplotlib.pyplot as plt
 
 # Definir uma função:
 def f(x):
-    return np.exp(x) * np.sin(x) - 1  # (e^x).sen(x) - 1
+    return np.exp(x) - x**3 - 7  # (e^x).sen(x) - 1
 
 def falsa_posicao():
     # Definir um intervalo inicial [a,b], garantindo que haja uma troca de sinais,
     # consequentemente há raízes no intervalo
-    a = 0
-    b = 1
+    a = 4
+    b = 5
 
     # Dividir o intervalo em 10 partes para gerar pontos 
     h = (b-a)/10
@@ -43,7 +43,7 @@ def falsa_posicao():
     fa = f(a)
     fb = f(b)
 
-    erro = 1e-10    
+    erro = 1e-5    
     k = 0           # Contador de iterações
     fxm = 1         # Valor inicial para f(xm), garantindo que o laço seja executado
 

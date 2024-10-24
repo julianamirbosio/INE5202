@@ -13,10 +13,10 @@ preencher as entradas de L e U.
 import numpy as np
 
 # Matriz A e vetor b
-A = np.array([[4, 2, 3], 
-              [2, -4, -1], 
-              [-1, 1, 4]], dtype=float)
-b = np.array([7, 1, -5], dtype=float)
+A = np.array([[2, 3, 4], 
+              [1, 1, 1], 
+              [4, -1, -2]], dtype=float)
+b = np.array([20, 6, -4], dtype=float)
 n = len(b)
 
 # Inicializa as matrizes L e U
@@ -51,6 +51,7 @@ for i in range(n - 2, -1, -1):
 # Resultado
 print("Matriz L:\n", L)
 print("Matriz U:\n", U)
+print("Solução y:\n", y)
 print("Solução x:\n", x)
 
 # Calcula o resíduo

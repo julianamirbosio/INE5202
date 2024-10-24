@@ -14,12 +14,12 @@ Condições para o método:
     absolutos dos outros elementos dessa linha.)
 '''
 
-a = [[3, -1, -1], 
-     [1, 3, 1], 
-     [2, -2, 4]]
-b = [1, 5, 4]
+a = [[3, -1, -2], 
+     [1, -4, 1], 
+     [-2, 1, -3]]
+b = [2, 4, -7]
 n = len(b)
-erro = 10**-8  
+erro = 10**-6
 k = 0
 x0 = [0, 0, 0]  # Inicializando o chute inicial
 x_old = x0.copy()

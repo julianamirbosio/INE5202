@@ -16,13 +16,13 @@ da derivada em vez do valor exato.
 import numpy as np
 
 # Função para a qual queremos encontrar a raiz
-def f(x):
-    return np.exp(x) * np.sin(x) - 1
+def funcao(x):
+    return np.exp(x) - x**3 - 7
 
 def secante():
-    x0 = 0  # Primeiro ponto inicial
-    x1 = 2  # Segundo ponto inicial
-    erro = 1e-10  
+    x0 = 5  # Primeiro ponto inicial
+    x1 = 6  # Segundo ponto inicial
+    erro = 1e-5
     fx0 = funcao(x0)  
     fx1 = funcao(x1)  
     k = 0  # Contador de iterações

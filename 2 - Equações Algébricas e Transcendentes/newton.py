@@ -12,15 +12,15 @@ import numpy as np
 
 # Função para a qual queremos encontrar a raiz
 def f(x):
-    return np.exp(x) * np.sin(x) - 1
+    return np.exp(x) - x**3 - 7
 
 # Derivada da função
 def derivada(x):
-    return np.exp(x) * np.sin(x) + np.exp(x) * np.cos(x)
+    return np.exp(x) + (-3)*(x**2)
 
 def newton():
-    x0 = 1  # Ponto inicial para a aproximação
-    erro = 1e-10 # 10**(-10)
+    x0 = 4.5  # Ponto inicial para a aproximação
+    erro = 1e-5 # 10**(-10)
     fx = f(x0) 
     k = 0  # Contador de iterações
 

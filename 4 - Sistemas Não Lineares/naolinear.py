@@ -7,14 +7,14 @@ import numpy as np
 
 # Funções não lineares
 def f1(x):
-    return np.exp(x[0]) + x[1] - 1
+    return 3*(x[0]**2)*x[1] - x[1]**3 -4
 
 def f2(x):
-    return x[0]**2 + x[1]**2 - 4
+    return x[0]**2 + (x[0])*x[1]**3 - 9
 
 # Método de Newton para sistemas não lineares
 def nao_linear():
-    x = [1.0, -1.0]  # Vetor inicial
+    x = [2.1, 2.5]  # Vetor inicial
     erro = 1e-10  
     k = 0  # Contador de iterações
     d = [np.ones(2)]  # Vetor de diferença inicial (arbitrário para iniciar o laço)
