@@ -22,7 +22,7 @@ for i in range (0, n/2):
     s2 = s2 + y[2*i]
     s4 = s4 + y[2*i + 1]
 s2 = s2 + y[n]
-S = (h/3)*(y[0] + 4*s2 + 2*s1 + y[n])
+S = (h/3)*(y[0] + 4*s2 + 2*s4 + y[n])
 
 # Exibindo o resultado
 print("Valor da integral aproximada (Método do Trapézio):", T)
